@@ -272,7 +272,7 @@ class Game {
     regEnemy(coordinates) {
         return new Enemy(this.context, {
             color: `hsl(${Math.random() * 360}, 100%, 50%)`,
-            radius: Math.random() * 33 + 7,
+            radius: Math.random() * 27 + 7,
             speed: this.values.enemySpeed
         }, coordinates, {
             x: this.shooter.x,
