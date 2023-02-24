@@ -121,7 +121,7 @@ class Game {
         this.icons = {
             pause: new Image()
         }
-        this.icons.pause.src = '/assets/play.png'
+        this.icons.pause.src = './play.png'
     }
     run() {
         this.context.canvas.addEventListener("mousedown", ({ sourceCapabilities, offsetX, offsetY }) => {
