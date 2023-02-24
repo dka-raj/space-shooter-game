@@ -213,9 +213,9 @@ class Game {
 
                 // when projectile hits the enemy
                 if (dist <= (enemy.ppt.radius + projectile.ppt.radius + projectile.ppt.aura)) {
-                    if (enemy.ppt.radius - 10 > 10) {
+                    if (enemy.ppt.radius - 15 > 15) {
                         gsap.to(enemy.ppt,{
-                            radius: enemy.ppt.radius-10
+                            radius: enemy.ppt.radius-15
                         })
                         setTimeout(() => {
                             this.projectiles.splice(ip, 1)
